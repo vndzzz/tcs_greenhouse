@@ -29,7 +29,7 @@ object Main extends App {
              |pump is ${if (controller.pumpSensor.value) "working" else "idle"}
            """.stripMargin)
   }
-  scala.io.StdIn.readChar()
+  scala.io.StdIn.readLine()
   cancelable.cancel()
   controller.stop()
 }
